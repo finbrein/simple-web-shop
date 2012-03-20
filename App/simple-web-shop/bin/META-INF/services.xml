@@ -1,0 +1,12 @@
+<service name="e0700180_sws_query_ws_40">
+	<description>SOAP Database Communication Service</description>
+	<operation name="GetDBQueryResult">
+		<messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+	</operation>
+	
+	<operation name="UpdateDBQuery">
+		<messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+	</operation>
+	
+	<parameter name="ServiceClass">db.service.SOAPDBService</parameter>
+</service>
